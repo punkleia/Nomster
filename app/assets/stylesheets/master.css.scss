@@ -20,21 +20,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #fff7f5; 
-  background-image: url('/assets/fabric-plaid.png');
+  background-color: #fbfff5; 
+  background-image: url('/assets/brilliant.png');
  /* Trebuchet-based sans serif stack */
-font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
 
 .navbar.navbar-inverse {
-  background-color: #1f1101;
-  background-image: url("/assets/binding-dark.png");
+  background-color: #180E1A;
   border-radius: 0;
   box-shadow: 0px 2px 3px #302F2F;
 }
 
 .navbar-inverse .navbar-brand {
   color: #9CCC0E;
-  font-family: 'archisticobold';
-  font-size: 30px;
+  font-family: 'alfa_slab_oneregular';
+  font-size: 40px;
 }
