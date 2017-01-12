@@ -1,4 +1,4 @@
-.pagination a, .pagination span.current, .pagination span.gap, .pagination {
+.pagination a {
     float: left;
     padding: 0 14px;
     line-height: 38px;
@@ -7,7 +7,6 @@
     border: 1px solid #DDD;
     border-left-width: 0;
     border-radius: none;
-
 }
 
 .pagination {
@@ -27,6 +26,7 @@
         padding : 0;
         float: none;
         border: none;
+
     }
     .next {
         padding : 0;
