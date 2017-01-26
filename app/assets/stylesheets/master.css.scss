@@ -20,7 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #fbfff5; 
+  /*background-color: #fbfff5;*/
+  /*background-color: #ECE8ED; */
+  background-color: #E9EDE8;  
   background-image: url('/assets/brilliant.png');
  /* Trebuchet-based sans serif stack */
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -62,15 +64,16 @@ body {
 
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid #AAADAA;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #ccc;
+  color: #AAADAA;
   content: open-quote;
   font-size: 4em;
+  font-style: serif;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
