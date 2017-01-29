@@ -29,6 +29,11 @@
     </script>
 
   <div id="map"></div>
+
+  <% @place.photos.each do |photo| %>
+    <small><%= photo.caption %></small>
+  <% end %>
+
 <% end %>
 
 <br />
@@ -93,7 +98,7 @@
   </div>
 <% end %>
 
-<div class="clear">
+<div class="clear"></div>
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :picture %>
   <%= f.input :caption %>

@@ -8,7 +8,7 @@ class PhotosController < ApplicationController
     #    return render text: "Not Allowed", status: :forbidden
     #else @place.photos.create(photo_params) < incorrect, see below
 
-    @photo = @place.photos.create(photo_params)
+    @place.photos.create(photo_params)
       redirect_to place_path(@place)
     end
   end
