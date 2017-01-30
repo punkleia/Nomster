@@ -51,6 +51,8 @@ gem "figaro", ">= 1.0.0"
 
 gem "carrierwave", "~> 1.0"
 
+gem 'taps', '~> 0.3.24'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
