@@ -131,17 +131,39 @@ img {
 }
 
 .btn-danger {
-  background-color: #CC0E86;
-  border: none
+  background-color: #fff;
+  border: #FF3064;
+  color: #9C101E;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.btn-danger:hover {
+  background-color: #9C101E
 }
 
 .btn-primary {
-  background-color: #5278CC;
-  border: none
+  background-color: #fff;
+  border: none;
+  color: #48109C;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.btn-primary:hover {
+  background-color: #48109C
 }
 
 .btn-success {
-  border: none
+  border: none;
+  background-color: #fff;
+  color: #649C10;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.btn-success:hover {
+  background-color: #649C10
 }
 
 .modal-title {
