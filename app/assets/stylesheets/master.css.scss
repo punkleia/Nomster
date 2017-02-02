@@ -132,10 +132,11 @@ img {
 
 .btn-danger {
   background-color: #fff;
-  border: #FF3064;
+  border-color: #9C101E;
+  border: 2px solid;
   color: #9C101E;
   font-weight: bold;
-  font-size: 20px
+  font-size: 15px
 }
 
 .btn-danger:hover {
@@ -146,8 +147,10 @@ img {
   background-color: #fff;
   border: none;
   color: #48109C;
+  border-color: #48109C;
+  border: 2px solid;
   font-weight: bold;
-  font-size: 20px
+  font-size: 15px
 }
 
 .btn-primary:hover {
@@ -158,8 +161,10 @@ img {
   border: none;
   background-color: #fff;
   color: #649C10;
+  border-color: #649C10;
+  border: 2px solid;
   font-weight: bold;
-  font-size: 20px
+  font-size: 15px
 }
 
 .btn-success:hover {
