@@ -36,6 +36,7 @@ body {
   border: none;
   border-radius: 0px;
   box-shadow: 0px 1px 3px #302F2F;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -65,6 +66,16 @@ body {
   clear: both;
 }
 
+a {
+    color: #1A141C;
+    text-decoration: none;
+ }
+
+a:hover {
+    color:#9CCC0E;
+    text-decoration: none;
+  }
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #AAADAA;
@@ -88,5 +99,64 @@ blockquote p {
 img {
   height: auto;
   max-width: 100%;
+}
 
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  max-height: 500px;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: rgba(0,0,0,0.5); 
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.btn-link {
+  color: #637065;
+  font-weight: normal;
+  border-radius: 0;   
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #1A141C;
+}
+
+.btn-danger {
+  background-color: #CC0E86;
+  border: none
+}
+
+.btn-primary {
+  background-color: #5278CC;
+  border: none
+}
+
+.btn-success {
+  border: none
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    font-family: "alfa_slab_oneregular";
+    font-size: 25px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.carousel {
+  box-shadow: 0px 1px 3px #302F2F;
 }
