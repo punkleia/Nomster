@@ -10,7 +10,8 @@
   border-color: #e4e4e4 #bebebd #bebedb #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
-  padding: 20px
+  padding: 20px;
+  word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6, {
@@ -206,4 +207,11 @@ label {
   display: block;
   margin-left: 40%;
   margin-right: 40%;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  blockquote small { 
+    font-size: 60%
+  }
 }

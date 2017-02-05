@@ -3,9 +3,12 @@ Nomster::Application.routes.draw do
   root 'places#index'
 
   resources :places do
-    resources :comments, only: :create
+    resources :comments
     resources :photos, only: :create
   end
+
+  #resources :comments
+
 
   resources :users, only: :show
   

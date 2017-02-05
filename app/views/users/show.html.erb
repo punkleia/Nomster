@@ -28,9 +28,11 @@
 <div class="container col-xs-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 <% @user.comments.each do |comment| %>
    <div class="col-xs-10 col-sm-6 col-md-6 col-lg-6">
+
       <blockquote>
-        <h2><%= link_to comment.place.name, place_path(comment.place) %></h2>
-        <% if comment.humanized_rating.present? %>
+        <h2 class="pull-left"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+        <div class="clear"></div>
+          <% if comment.humanized_rating.present? %>
           <b><%= comment.humanized_rating %></b> -
         <% end %>
           <%= comment.message %>

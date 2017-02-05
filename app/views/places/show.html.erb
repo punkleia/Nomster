@@ -91,6 +91,7 @@
   <i class="glyphicon glyphicon-plus"></i>
     Add a comment
   </button>
+  </div>
 </div>
 
 <div class="clear"></div>
@@ -102,12 +103,16 @@
       <% if comment.humanized_rating.present? %>
         <b><%= comment.humanized_rating %></b> -
       <% end %>
-        <%= comment.message %>
-      <small><%= comment.user.email %></small>
-    </blockquote>
-  </div>
+      <%= comment.message %>
+        <small><%= comment.user.email %></small>
+
+     </blockquote>
+</div>
 <% end %>
 </div>
+    
+  
+
 
 
 <!-- Modal -->
@@ -122,14 +127,13 @@
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <%= f.input :picture %>
           <%= f.input :caption %>
-            <br />
+          <br />
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <%= f.submit "Add Photo", class: 'btn btn-primary' %>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <%= f.submit "Add Photo", class: 'btn btn-primary' %>
         <% end %>
-        </div>
+      </div>
       </div>
     </div>
   </div>
-</div>
