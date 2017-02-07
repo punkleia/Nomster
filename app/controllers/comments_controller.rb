@@ -20,31 +20,39 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @place = Place.find(params[:place_id])
     @comment = Comment.new
+    @user = User.find(params[:user_id])
   end
 
- #def edit
+ def edit
   #@place = Place.find(params[:place_id])
-  #@comment = Comment.find(params[:id])
+  @comment = Comment.find(params[:id])
+      if @comment.user != current_user
+         return render text: "Not Allowed", status: :forbidden
+      end
+ end
 
-  #@comment.update_attributes(comment_params)
-   #   if @comment.valid?
-    #    redirect_to place_path(@place)
-  #  @post = Post.find(param[:post_id])
+ def update
+  @comment = Comment.find(params[:id])
+    if @comment.user != current_user
+      return render text: "Not Allowed", status: :forbidden
+    end
 
-   #   if @comment.user != current_user
-   #     return render text: "Not Allowed", status: :forbidden
-    #  end
- #end
+  @comment.update_attributes(comment_params)
+    if @comment.valid?
+      redirect_to current_user
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
 
- # def update
-  #  @comment = Comment.find(params[:id])
-  #  @comments.update_attributes(comment_params)
-  #  redirect_to place_path(@place)
-  #end
-
- # def destroy
- # @comment = comment.find(params[:id])
- # @comment.destroy
+  def destroy
+    @comment = Comment.find(params[:id])
+      if @comment.user != current_user
+        return render text: "Not Allowed", status: :forbidden
+      end
+    @comment.destroy
+    redirect_to current_user
+  end
     
 
   # if @comments.user != current_user

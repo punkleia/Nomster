@@ -3,11 +3,12 @@ Nomster::Application.routes.draw do
   root 'places#index'
 
   resources :places do
-    resources :comments, only: :create
+    resources :comments, only: [:index, :new, :create]
     resources :photos, only: :create
   end
 
-  # resources :comments
+  resources :comments, only: [:show, :edit, :update, :destroy]
+  # the above can be accomplished with shallow: true
 
   resources :users, only: :show
   
